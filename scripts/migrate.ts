@@ -46,7 +46,7 @@ async function migrate() {
       process.exit(1)
     }
 
-    const dbName = config.d1_databases[0].database_name
+    const dbName = config.d1_databases[0].database_name.trim()
 
     // Generate migrations
     console.log('Generating migrations...')
